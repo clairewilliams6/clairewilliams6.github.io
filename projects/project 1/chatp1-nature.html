@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Back to Nature</title>
+  <style>
+    /* General Reset */
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+    }
+
+    #back-to-nature {
+      max-width: 1440px;
+      margin: 50px auto;
+      padding: 20px;
+      text-align: center;
+    }
+
+    /* Section Title */
+    #back-to-nature h2 {
+      font-family: 'Oswald', sans-serif;
+      font-size: 36px;
+      margin-bottom: 40px;
+    }
+
+    /* Nature Items Container */
+    .nature-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      max-width: 300px;
+      margin: 20px;
+    }
+
+    #nature-pics {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      flex-wrap: wrap;
+    }
+
+    .nature-item img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s;
+    }
+
+    .nature-item img:hover {
+      transform: scale(1.05);
+    }
+
+    /* Text Styling for Nature Items */
+    .nature-item h4 {
+      font-family: 'Oswald', sans-serif;
+      font-size: 22px;
+      margin: 15px 0 10px;
+    }
+
+    .nature-item p {
+      font-size: 16px;
+      line-height: 1.5;
+      margin: 0;
+    }
+
+    /* Links Styling */
+    .nature-item p a {
+      text-decoration: none;
+      color: #007bff;
+    }
+
+    .nature-item p a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <div id="back-to-nature">
+    <h2 class="oswald">BACK TO NATURE</h2>
+
+    <div id="nature-pics">
+      <!-- Nature Item 1 -->
+      <div class="nature-item">
+        <img src="images/canyon.jpg" alt="Canyon Image">
+        <h4>The Pennsylvania Grand Canyon</h4>
+        <p>
+          Also known as Pine Creek Gorge, this natural wonder features stunning vistas, hiking trails, and opportunities for outdoor recreation.<br>
+          <a href="https://www.dcnr.pa.gov/StateParks/FindAPark/ColtonPointStatePark" target="_blank">
+            www.dcnr.pa.gov/StateParks/FindAPark/ColtonPointStatePark
+          </a>
+        </p>
+      </div>
+
+      <!-- Nature Item 2 -->
+      <div class="nature-item">
+        <img src="images/raystown.jpg" alt="Raystown Image">
+        <h4>Raystown Lake</h4>
+        <p>
+          A scenic reservoir near Huntingdon, offering boating, fishing, hiking, and camping amid picturesque landscapes and water activities.<br>
+          <a href="https://www.nab.usace.army.mil/Missions/Dams-Recreation/Raystown" target="_blank">
+            www.nab.usace.army.mil/Missions/Dams-Recreation/Raystown
+          </a>
+        </p>
+      </div>
+
+      <!-- Nature Item 3 -->
+      <div class="nature-item">
+        <img src="images/park.jpg" alt="Park Image">
+        <h4>Worlds End State Park</h4>
+        <p>
+          Situated in the Endless Mountains, this park is known for its rugged beauty, with hiking trails, waterfalls, and breathtaking views of the Loyalsock Creek Gorge.<br>
+          <a href="https://www.dcnr.pa.gov/StateParks/FindAPark/WorldsEndStatePark" target="_blank">
+            www.dcnr.pa.gov/StateParks/FindAPark/WorldsEndStatePark
+          </a>
+        </p>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+</html>

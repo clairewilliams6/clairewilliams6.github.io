@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Discover Central Pennsylvania</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <ul>
+      <li><a href="#">Things to Do</a></li>
+      <li><a href="#">Events</a></li>
+      <li><a href="#">Plan Your Trip</a></li>
+      <li><a href="#">Places to Stay</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="hero">
+    <h1>DISCOVER<br>CENTRAL PENNSYLVANIA</h1>
+  </header>
+
+  <!-- Essential Guide Section -->
+  <section class="essential-guide">
+    <h2>The Essential Guide</h2>
+    <p>Central Pennsylvania's Must-See Attractions</p>
+    <p>Central Pennsylvania offers a perfect blend of natural beauty, history, and adventure...</p>
+  </section>
+
+  <!-- Highlighted Attractions -->
+  <section class="attractions">
+    <h3>Highlighted Attractions</h3>
+    <div class="attraction-card">
+      <img src="hershey-park.jpg" alt="Hershey Park">
+      <h4>Hershey Park</h4>
+      <p>A renowned amusement park...</p>
+      <a href="https://www.hersheypark.com">www.hersheypark.com</a>
+    </div>
+    <div class="attraction-card">
+      <img src="state-capitol.jpg" alt="Pennsylvania State Capitol">
+      <h4>Pennsylvania State Capitol</h4>
+      <p>An impressive architectural gem...</p>
+      <a href="https://www.pacapitol.com">www.pacapitol.com</a>
+    </div>
+  </section>
+
+  <!-- Back to Nature Section -->
+  <section class="back-to-nature">
+    <h2>Back to Nature</h2>
+    <p>Central Pennsylvania’s Must-See Scenic Spots</p>
+    <div class="card-grid">
+      <div class="card">
+        <img src="grand-canyon.jpg" alt="Pennsylvania Grand Canyon">
+        <h4>The Pennsylvania Grand Canyon</h4>
+        <p>A beautiful natural wonder with hiking trails...</p>
+      </div>
+      <div class="card">
+        <img src="raystown-lake.jpg" alt="Raystown Lake">
+        <h4>Raystown Lake</h4>
+        <p>A scenic lake offering boating and fishing...</p>
+      </div>
+      <div class="card">
+        <img src="worlds-end.jpg" alt="Worlds End State Park">
+        <h4>Worlds End State Park</h4>
+        <p>A rugged park with waterfalls and views...</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>Visit PA Today – Explore all that Pennsylvania has to offer!</p>
+  </footer>
+
+</body>
+</html>
+CSS (styles.css)
+css
+Copy code
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #333;
+  padding: 10px;
+  text-align: right;
+}
+
+.navbar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar li {
+  display: inline;
+  margin-left: 20px;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Hero Section */
+.hero {
+  background-image: url('central-pennsylvania.jpg');
+  background-size: cover;
+  color: white;
+  text-align: center;
+  padding: 100px 0;
+  font-size: 48px;
+}
+
+/* Essential Guide */
+.essential-guide {
+  padding: 40px;
+  text-align: center;
+  background-color: #e6f0e6;
+}
+
+.essential-guide h2 {
+  font-size: 32px;
+}
+
+.attractions {
+  padding: 40px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.attraction-card {
+  width: 45%;
+  text-align: center;
+}
+
+.attraction-card img {
+  width: 100%;
+  height: auto;
+}
+
+/* Back to Nature Section */
+.back-to-nature {
+  padding: 40px;
+  background-color: #f0f0f0;
+}
+
+.card-grid {
+  display: flex;
+  justify-content: space-around;
+}
+
+.card {
+  width: 30%;
+  text-align: center;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+}
+
+/* Footer */
+footer {
+  background-color: #2d4b2d;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  font-size: 18px;
+}
+
+
+
+<div id="highlighted-attractions">
+    <h2 class="oswald">HIGHLIGHTED ATTRACTIONS</h2>
+    <h3>Central Pennsylvania's Top Picks for Every Traveler</h3>
+    <div id="hershey-text">
+        <h4> Hershey Park</h4>
+        <p>A renowned amusement park featuring exciting rides, live entertainment, and an opportunity to learn about chocolate-making at Hershey's Chocolate World. <br>  www.hersheypark.com</p></div>
+    <div id="hershey-img"><img src="images/hershey.jpg" alt=""></div>
+    <div id="capitol-img"> <img src="images/capitol.jpg" alt=""></div>
+
+    <br>
+
+   
+
+       
+        <br><br>
+    <div id="capitol-text">
+        <h4>Pennsylvania State Capitol </h4>
+        <br>
+        <p> An impressive architectural gem in Harrisburg showcasing exquisite artwork, stunning interiors, and guided tours to learn about the state's government and history.
+             
+            www.pacapitol.com
+            </p>
+    </div>
+
+
+
+
+</div> 

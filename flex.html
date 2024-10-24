@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box; /*the * selects everything in the page */
+        }
+
+        body{
+            background-color: #d9d9d9;
+        }
+#main{
+    width: 1440px;
+    background-color: #a9a6a6;
+    margin: 0px auto; /*centers the text */
+    padding-top: 50px;
+    padding-right: 34px;
+    padding-bottom: 50px;
+    padding-left: 34px;
+    padding:50px 34px 
+}
+
+#social{
+    width: 1250px;
+    height: 750px;
+    background-color: #D9D9D9;
+}
+
+.column1{
+    width: 625px;
+    background-color: antiquewhite;
+    border: #999 solid 1px;
+}
+
+.column2{
+    width: 625px;
+    background-color: antiquewhite;
+    border: #999 solid 1px;
+}
+
+/*utilityclass*/
+
+.flex{
+    display:flex;
+}
+
+
+
+    </style>
+</head>
+<body>
+    <div id="main"></div>
+        <div id="social" class="flex">
+            <div class="column1">
+                <img src="images/shrimp.png">
+            </div>
+            <div class="column2">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, accusantium eligendi nobis quae dolorum error pariatur ad provident cupiditate ab consequuntur quis nam, repellat ducimus illum sunt assumenda dolore alias?</p>
+            </div>
+        </div>
+</body>
+</html>
