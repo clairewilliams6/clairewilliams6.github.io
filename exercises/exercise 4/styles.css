@@ -7,21 +7,21 @@
 
 }
 img {
-    width: 200px; /* Control the width */
-    height: 200px; /* Control the height */
-    border-radius: 10px; /* Rounded corners */
-    border: 2px solid #29304f; /* Border around the image */
-    box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.3); /* Drop shadow */
-    object-fit: cover; /* Ensures the image fits perfectly within the frame */
-    transition: transform 0.3s, box-shadow 0.3s; /* Smooth animation on hover */
-    justify-content: center; /* Horizontal center */
-    align-items: center; /* Vertical center */
+    width: 200px; 
+    height: 200px; 
+    border-radius: 10px; 
+    border: 2px solid #29304f; 
+    box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.3); 
+    object-fit: cover; 
+    transition: transform 0.3s, box-shadow 0.3s; /* animation on hover */
+    justify-content: center; 
+    align-items: center; 
 }
 
 /* Hover Effect */
 img:hover {
-    transform: scale(1.1); /* Slight zoom on hover */
-    box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.5); /* Enhanced shadow on hover */
+    transform: scale(1.1); /*  zoom on hover */
+    box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.5); /* shadow on hover */
 }
 
 /* Centering the Image */
