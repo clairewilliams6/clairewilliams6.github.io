@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=>, initial-scale=1.0">
+    <title>Media Queries</title>
+    <style>
+        body{
+            background-color: rgb(210, 235, 235);
+        }
+
+        main{
+            background-color: rgb(64, 15, 210);
+            margin: 0px auto;
+            width: 1000px;
+        }
+
+        #header{
+            background-color:  coral;
+        }
+
+        #content{
+            background-color: pink;
+        }
+
+        @media (max-width:600px){
+            #header{
+                background-color: chartreuse;
+            }
+
+            #body{
+                background-color: darkkhaki;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <main>
+        <div id="header">
+            <h1>This is my webpage</h1>
+        </div>
+
+        <div id="content">
+
+            <img src="https://placehold.co/600x400/orange/white"
+        </div>
+    </main>   
+</body>
+</html>
