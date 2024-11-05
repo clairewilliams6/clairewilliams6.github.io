@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        body{
+            margin: 0;
+            background-color: rgb(182, 194, 189);
+        }
+
+        main{
+            margin: 0px auto;
+            background-color: rgb(145, 181, 147);
+            max-width: 900px;
+        }
+
+        .row{
+            display: flex;
+            flex-direction: row;
+        }
+
+        @media(max-width:600px){
+            .row{
+                flex-direction: column-reverse;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <main>
+        <!--this is row 1-->
+    <div id="feature1" class="row">
+            <div>
+                <img src="https://placehold.co/600x400/orange/white">
+            </div>
+
+        <div id="desc">
+            <h1>Title 1</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur accusantium, impedit recusandae a sed, quasi cumque praesentium voluptas facere amet officiis rem voluptatem sapiente? Voluptate amet distinctio dicta facere facilis.</p>
+        </div>
+
+    </div>
+
+        <!--this is row 2-->
+    <div id="feature2" class="row">
+        <div>
+            <img src="https://placehold.co/600x400/orange/white">
+        </div>
+        <div id="desc">
+            <h2>Title 1</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur accusantium, impedit recusandae a sed, quasi cumque praesentium voluptas facere amet officiis rem voluptatem sapiente? Voluptate amet distinctio dicta facere facilis.</p>
+        </div>
+
+
+    </div>
+
+       <!--this is row 3-->
+       <div id="feature3" class="row">
+        <div>
+            <img src="https://placehold.co/600x400/orange/white">
+        </div>
+        <div id="desc">
+            <h2>Title 1</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur accusantium, impedit recusandae a sed, quasi cumque praesentium voluptas facere amet officiis rem voluptatem sapiente? Voluptate amet distinctio dicta facere facilis.</p>
+        </div>
+
+
+    </div>
+    </main>
+</body>
+</html>
