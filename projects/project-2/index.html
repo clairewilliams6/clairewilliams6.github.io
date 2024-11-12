@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+   
+    <style>
+        *{
+    box-sizing: border-box;
+    margin: 0px auto;
+}
+
+ul {
+
+    list-style-type: none;
+    margin: 0px auto;
+    padding: 0;
+    overflow: hidden;
+    background-color: #F3C5D0;
+    height: 53px;
+  }
+  
+  li {
+    float: left;
+    border-right: 1px solid #000000;
+  }
+  
+  li a {
+    display: block;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+  
+  
+  /* Change the link color to #111 (black) on hover */
+  li a:hover {
+    background-color: #FF6551;
+  }
+  li a:active {
+    background-color: #FF6551;
+  }
+  
+  #container{
+    width: 1280px;
+      height: 53px;
+      background-color: #F3C5D0;
+      margin: 0px auto;
+  }
+
+  #img{
+    width: 1280px;
+    height: 720px;
+    margin: 0px auto;
+    object-fit: cover;
+    position: relative;
+  }
+
+ 
+
+.draw{
+    text-align: ;
+}
+
+         .img-container{
+    width: 1280px;
+    height: 720px;
+    margin: 0px auto;
+    object-fit: cover;
+  }
+
+  .overlay-text{
+
+  }
+
+  .img-container {
+    position: relative;
+  
+  }
+ 
+  
+  .overlay-text {
+    position: absolute;
+    top: 45%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    color: #EC5B43;
+    padding: 10px 20px; 
+    font-size: 30px; 
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;}
+  
+.chicken{
+    font-size: 100px;
+}
+.how-to{
+    font-size: 50px;
+    font-weight: 600;
+}
+
+.guide{
+    font-size: 30px;
+    font-weight: 400;
+}
+    </style>
+</head>
+<body>
+    <main>
+        <div id="container">
+            <ul>
+                <li><a href="index.html" class="active">HOME</a></li>
+                <li><a href="step1.html">STEP 1</a></li>
+                <li><a href="step2.html">STEP 2</a></li>
+                <li><a href="step3.html">STEP 3</a></li>
+                <li><a href="step4.html">STEP 4</a></li>
+              </ul>
+            </div> 
+          
+            <div class="img-container">
+                <img src="images/home.jpg" alt="">
+                    <div class="overlay-text">
+                        <h2 class="how-to">how to:</h2>
+                        <h1 class="chicken">DRAW A CHICKEN</h1>
+                        <h2 class="guide">a step-by-step guide to success</h2>
+                 </div>
+            </div>
+    </main>
+    
+</body>
+</html>

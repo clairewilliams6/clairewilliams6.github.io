@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Step 1</title>
+ 
+    <style>
+        *{
+    box-sizing: border-box;
+    margin: 0px auto;
+}
+
+ul {
+
+    list-style-type: none;
+    margin: 0px auto;
+    padding: 0;
+    overflow: hidden;
+    background-color: #F3C5D0;
+    height: 53px;
+  }
+  
+  li {
+    float: left;
+    border-right: 1px solid #000000;
+  }
+  
+  li a {
+    display: block;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+  
+  
+  /* Change the link color to #111 (black) on hover */
+  li a:hover {
+    background-color: #FF6551;
+  }
+  li a:active {
+    background-color: #FF6551;
+  }
+  
+  #container{
+    width: 1280px;
+      height: 53px;
+      background-color: #F3C5D0;
+      margin: 0px auto;
+  }
+
+  #img{
+    width: 1280px;
+    height: 720px;
+    margin: 0px auto;
+    object-fit: cover;
+    position: relative;
+  }
+
+ 
+
+.draw{
+    text-align: ;
+}
+
+         .img-container{
+    width: 1280px;
+    height: 720px;
+    margin: 0px auto;
+    object-fit: cover;
+  }
+
+  .overlay-text{
+
+  }
+
+  .img-container {
+    position: relative;
+  
+  }
+ 
+  
+  .overlay-text {
+    width: 500px;
+    position: absolute;
+    top: 45%; 
+    left: 20%; 
+    transform: translate(-50%, -50%); 
+    color: #000000;
+    padding: 10px 20px; 
+    font-size: 30px; 
+    text-align: left;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;}
+
+    .draw{
+        font-style: italic;
+        font-size: 20px;
+    }
+
+    .start{
+        font-size: 20px;
+    }
+
+    .list{
+        font-size: 20px;
+    }
+    </style>
+</head>
+<body>
+    <main>
+        <div id="container">
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="step1.html" class="active">STEP 1</a></li>
+                <li><a href="step2.html">STEP 2</a></li>
+                <li><a href="step3.html">STEP 3</a></li>
+                <li><a href="step4.html">STEP 4</a></li>
+              </ul>
+            </div> 
+
+           
+
+            <div id="img">
+                <img src="images/step1.jpg" alt="">
+                <div  class="overlay-text">
+                    <p class="draw">How to Draw a Chicken</p>
+                
+                    <h2 class="step1">STEP ONE:</h2>
+                    <br>
+                    <p class="start">Start by drawing the outline of the chicken. You can draw it all together, or break it down by combining each of these shapes:</p>
+                    <br>
+                    <ol class="list">
+                        <li><b>Body:</b> a large semi-circle</li>
+                        <li><b>Neck:</b> a long rectangle extending from the body</li>  
+                        <li><b>Head</b> an oval that is attached to the neck</li>
+                        <li><b>Beak:</b> a triangle coming from the head</li>
+                        <li> <b>Wattle:</b> a triangle with rounded corners placed below the beak</li>   
+                        <li><b>Head feathers:</b>Head feathers: three smaller rectangles sticking out from the top of the head</li>
+                        <li><b>Tail feathers:</b> three rectangles sticking out from the end of the body</li>
+                        <li><b>Feet:</b> a line with three smaller lines extending out from it </li>
+                    </ol>
+                </div>
+            </div>
+
+    </main>
+    
+</body>
+</html>
