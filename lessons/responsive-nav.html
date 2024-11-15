@@ -1,140 +1,165 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>How to Create A Glow Effect in Photoshop</title>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-<style>
-body{
-margin: 0px;
-font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-background-color: #04131C;
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 5</title>
+    <!--link to font cdn icon - goes at the top-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" /> 
+    <style>
+            *{
+                box-sizing: border-box;
+            }
+            body{
+                margin: 0;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                background-color:darkslategray;
+            }
 
-}
-main {
-width: 1000px;
-background-color: #04131C;
-margin: 0px auto;
-}
+            /*Add a background color & size, center to main*/
+            main{
+                width: 1000px;
+                background-color:cadetblue;
+                margin: 0px auto;
+            }
 
-.topnav{
-background-color: #04131C;
-}
-.topnav a {
-display: block;
-float: left;
-color: white;
-text-decoration: none;
-padding: 16px 20px;
-text-align: center;
-font-size: 16px;
-}
+            /* Add a background color to the top navigation */
+            .topnav {
+                background-color:darkcyan;
+                overflow: hidden;
+            }
 
-.topnav a:hover{
-background-color: #172f3e;
-}
+            /* Style the links inside the navigation bar - this is for all link states */
+            .topnav a {
+                display: block;
+                float: left;
+                padding: 16px 20px;          
+                color: #f2f2f2;
+                text-align: center;
+                text-decoration: none;
+                font-size: 17px;
+                
+            }
 
-.topnav a.active {
-font-weight: bold;
-color:cadetblue;
-}
-.fa-burger{
-color: white;
-padding: 16px 20px;
-display: block;
-float: left;
+            /* Change the color of links on hover */
+            .topnav a:hover {
+                background-color:#0b4a53;
+                
+            }
 
-}
+            .topnav .icon:hover  {
+                background-color:#ffffff;
+                
+            }
 
-.topnav .icon{
-    display: none;
-}
+            /* Add an active class to highlight the current page */
+            .topnav a.active {
+                background-color:#132426;
+                color: white;
+                
+            }
 
-@media(max-width: 600px){
-    .topnav{
-        display: none;
-    }
+            .fa-burger{
+                color: #f65134;
+    
+            }
+            
+            .topnav .icon {/*Hide the icon when in regular css*/
+                display: none;
+               
+            }
 
-    .topnav a.icon{
-        float: right;
-        display: block;
-    }
+            #title{
+                width:400px;
+                padding-right: 20px;
+            }
+            #flexparent{
+                display: flex;
+            }
 
-    main{
-        width: 100%;
-    }
+            /* When the screen is less than 600 pixels wide, hide all links. Show the link that contains  open and close the topnav (.icon) */
+            @media  (max-width: 600px) {
+            main{
+                width: 100%;
+            }
+                .topnav a {
+                display: none;
+            }
+            .topnav a.icon {
+                float: right;
+                display: block;
+               
+            }
+            .title, img{
+                display:flex;
+                flex-direction:row;
+                width: 100%;
+            }
 
-    topnav.responsive{
-        position:relative;
-    }
+            
+            }
 
-    topnav.responsive a.icon{
-    position:absolute;
-    right: 0;
-    left: 0;
-}
-
-    topnav.topnav.responsive a{
-        float: none;
-        display:block;
-        text-align: left;
-    }
-}
-
-</style>
-
+            /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) This comes from the JS */
+            @media (max-width: 600px) {
+            .topnav.responsive {
+                position: relative;
+            } /*to always keep this in place*/
+            .topnav.responsive a.icon {
+                position: absolute;
+                right: 0;
+                top: 0;
+            }
+            .topnav.responsive a {
+                float: none;
+                display: block;
+                text-align: left;
+            }
+            }
+           
+    </style>
+    
 </head>
 <body>
-<main>
-<div class="topnav" id="respNav">
-<a href="#step1" class="active">Step 1</a>
-<a href="#step2">Step 2</a>
-<a href="#step3">Step 3</a>
-<a href="#step4">Step 4</a>
-<a href="#step5">Step 5</a>
-<a href="#step6">Step 6</a>
-<a href="javascript.void(0)" class="icon" onclick="myFunction()">
-    <i class="fa-solid fa-burger"></i>
+    <!--Add the main tag and nav div and links-->
+    <main>
+    <div class="topnav" id="respNav">
+        <a href="#home" class="active">Home</a>
+        <a href="#news">News</a>
+        <a href="#contact">Contact</a>
+        <a href="#about">About</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <!--<i class="fa-solid fa-bars"></i>-->
+        
+        <i class="fa-solid fa-burger"></i> <!--you can style in stylesheet using the second class-->
+        </a>
+    </div>
 
+    <div id="flexparent">
+    <div id="title">
+        <h2>Responsive Nav & Page Example</h2>
+        
+    </div>
+
+    <div>
+
+       <img  src="https://placehold.co/600x400/coral/white">
+    </div>
 </div>
 
+    </main>
 
-<div>
-
-
-
-</div>
-
-</main>
-<!--toggle between regular nav and burger-->
-<script>
-
-    function myFunction() 
-    var x=document.getElementById("respNav") //creates a variable that looks in the document for id respNav//
-    if(x.className==="topnav"){ //if it finds 'topnav" inside the respNav,//
-    x.classname+="responsive"
-    }else{x.className="topnav"}
-
-
-</script>
-
-<!-- this is what the java script looks like
-<script>
-
-    function myFunction() 
-
-    var x=document.getElementById("respNav") 
-
-    if(x.className==="topnav"){ 
-
-    x.classname+="responsive"
-
-    }else{x.className="topnav"}
-
-
-</script>
-
--->
+    <!-- Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon - goes at the bottom of the page -->
+    <script>/*starts JS*/
+        function myFunction() { /*begins function name whatever you wish - must match script in html*/
+          var x = document.getElementById("respNav");/*create a variable that looks in the document for the id "respNav" - conventional naming*/
+          if (x.className === "topnav") {/*If it finds "topnav" in the RespNav, returns a class name responsive*/
+            x.className += " responsive";
+          } else { /*otherwise use the top nav styles*/
+            x.className = "topnav";
+          }
+        }
+        </script>
+    
+    
 </body>
 </html>
