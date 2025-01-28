@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 1</title>
+</head>
+<body>
+    <h1 id="h1">Hello, I'm Claire</h1>
+    <a id="link1" href="#">Change Color</a>
+    <p id="demo">I'm a Graphic and Interactive Design student at HACC.</p>
+    <button type="button" onclick="myFunction()">Learn more!</button>
+      
+      <button onclick="alert('Nice to meet you! See ya later!')">Leaving the site?</button>
+
+
+   <script>
+    const link1 = document.querySelector('#link1');
+    link1.onmouseup = () => {        document.querySelector('#h1').style.color='green';
+};
+
+function myFunction() {
+            document.getElementById("demo").innerHTML = "I love illustration, typography, and lots of color.";
+        }
+
+        
+   </script>
+      
+     
+
+
+</body>
+</html>
